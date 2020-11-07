@@ -6,24 +6,50 @@
             <div class="pull-left">
                 <h2> Show Product</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
-            </div>
+            
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name:</strong>
+                <strong>ลำดับ:</strong>
                 {{ $product->name }}
+            </div>
+        </div>
+         <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>ชื่อสินค้า:</strong>
+                {{ $product->price }}
+            </div>
+        </div>
+         <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>ราคา:</strong>
+                {{ $product->count }}
+            </div>
+        </div>
+         <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>หน่วยสินค้า:</strong>
+                {{ $product->product }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Details:</strong>
+                <strong>รหัสคลังสินค้า:</strong>
+                {{ $product->count }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>ชื่อผู้ผลิต:</strong>
                 {{ $product->detail }}
             </div>
         </div>
+             
+               <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <a class="btn btn-success" href="{{ route('products.index') }}"> Back</a>
+            </div>
     </div>
 @endsection
